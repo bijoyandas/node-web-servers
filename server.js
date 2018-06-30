@@ -37,7 +37,12 @@ hbs.registerHelper('screamIt', (text) => {
 app.get('/about', (request, response) => {
     response.render('about.hbs', {
         pageTitle: 'About Page Title',
-        currentYear: new Date().getFullYear()
+    });
+});
+
+app.get('/projects', (request, response) => {
+    response.render('projects.hbs', {
+        pageTitle: 'Projects Page Title'
     });
 });
 
